@@ -12,6 +12,16 @@
   --filter-button-background: #f5f4fa;
 }
 
+/* container settings */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* font settings for website */
 
 body {
@@ -24,11 +34,30 @@ body {
 /* features for lists */
 
 .list {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+  padding-left: 0ch;
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
+
+/* images */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* section */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* styles for logo */
 
 .logo {
@@ -42,27 +71,56 @@ body {
 }
 
 .header-logo {
+  margin-right: 90px;
   color: var(--header-logo-color);
 }
 
 .footer-logo {
   color: var(--secondary-header-color);
 }
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
 .logo .header-logo:focus,
 .logo .header-logo:hover {
   color: var(--focus-color);
 }
+
 .logo .footer-logo:focus,
 .logo .footer-logo:hover {
   color: var(--focus-color);
 }
+
 /* styles for header */
+
+.header {
+  border-bottom: 1px;
+  border-color: #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: inline-flex;
+  margin-right: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+}
 
 .nav-links .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--primary-header-color);
 }
 
@@ -73,11 +131,25 @@ body {
 .nav-links .link:focus {
   color: var(--focus-color);
 }
+
+.nav-links .link-item:not(:last-child),
+.nav-contacts .contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-contacts {
+  display: inline-flex;
+  justify-content: end;
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+}
+
 .nav-contacts .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--primary-text-color);
 }
 .nav-contacts .link:hover,
@@ -91,6 +163,10 @@ body {
   background-color: var(--secondary-background-color);
 }
 .hero-title {
+  width: 700px;
+  margin-top: 0ch;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,6 +180,7 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
   color: var(--secondary-header-color);
   background-color: var(--button-background-color);
   cursor: pointer;
@@ -112,10 +189,15 @@ body {
 /* styles for features */
 
 .feature-header {
-  visibility: hidden;
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+  display: none;
 }
 
 .feature-headers {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -124,6 +206,9 @@ body {
 }
 
 .feature-paragraphs {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
@@ -132,6 +217,9 @@ body {
 /* styles for section "what do we do?" */
 
 .directions-header {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -143,6 +231,9 @@ body {
 /* styles for section "our team" */
 
 .team-header {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -151,6 +242,9 @@ body {
 }
 
 .employee-name {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -158,13 +252,22 @@ body {
   color: var(--primary-header-color);
 }
 .employee-position {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
   color: var(--primary-text-color);
 }
 
 /* styles for footer */
+
+.footer-contacts .contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer {
   background-color: var(--secondary-background-color);
 }
@@ -194,8 +297,11 @@ body {
 }
 
 /* styles for portfolio page */
+
 .projects-header {
-  visibility: hidden;
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+  display: none;
 }
 .project-filter .button {
   font-family: inherit;
@@ -212,13 +318,20 @@ body {
   color: var(--secondary-header-color);
 }
 .projects-name {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
   color: var(--primary-header-color);
 }
 .projects-type {
+  margin-top: 0ch;
+  margin-bottom: 0ch;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
