@@ -1,1 +1,1 @@
-https://oleksii-petryk.github.io/goit-markup-hw-01/ link for browser
+https://oleksii-petryk.github.io/goit-markup-hw-03/ link for browser
