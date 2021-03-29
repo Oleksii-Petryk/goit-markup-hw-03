@@ -67,6 +67,9 @@ img {
 /* styles for logo */
 
 .logo {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -78,6 +81,7 @@ img {
 
 .header-logo {
   margin-right: 90px;
+
   color: var(--header-logo-color);
 }
 
@@ -98,8 +102,9 @@ img {
 /* styles for header */
 
 .header {
-  border-bottom: 1px;
-  border-color: #ececec;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border: 1px solid #ececec;
 }
 
 .header .container {
@@ -111,13 +116,14 @@ img {
 .nav-links {
   display: inline-flex;
   margin-right: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .nav-links .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -147,6 +153,9 @@ img {
 }
 
 .nav-contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -163,6 +172,8 @@ img {
 /* styles for hero */
 
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--secondary-background-color);
 }
 
@@ -187,7 +198,6 @@ img {
   align-items: center;
   font-family: inherit;
   border-width: 0px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
@@ -210,6 +220,10 @@ img {
 }
 
 /* styles for features */
+
+.features {
+  padding-bottom: 0px;
+}
 
 .feature-list {
   display: flex;
@@ -280,6 +294,10 @@ img {
 
 /* styles for section "our team" */
 
+.our-team {
+  padding-top: 0px;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -306,7 +324,7 @@ img {
 }
 
 .employee-name {
-  margin-top: var(--list-items-gaps);
+  margin-top: 0px;
   margin-bottom: var(--secondary-headers-gap);
 
   font-weight: 500;
@@ -327,6 +345,11 @@ img {
   color: var(--primary-text-color);
 }
 
+.descr-employees {
+  padding-top: var(--list-items-gaps);
+  padding-bottom: var(--list-items-gaps);
+}
+
 /* styles for footer */
 
 .footer-contacts .contacts-item:not(:last-child) {
@@ -334,12 +357,10 @@ img {
 }
 
 .footer {
-  background-color: var(--secondary-background-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--secondary-background-color);
 }
 
 .address {
@@ -405,6 +426,8 @@ img {
 
 .project-filter .button:hover,
 .project-filter .button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   background-color: var(--focus-color);
   color: var(--secondary-header-color);
 }
@@ -424,7 +447,7 @@ img {
 }
 
 .card-description {
-  margin: var(--descr-margins);
+  padding: var(--descr-margins);
 }
 
 .projects-name {
